@@ -1,0 +1,16 @@
+PODS:
+  - WSCalendarViewSwift (1.0.0)
+
+DEPENDENCIES:
+  - WSCalendarViewSwift (from `../`)
+
+EXTERNAL SOURCES:
+  WSCalendarViewSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WSCalendarViewSwift: ccb6ed34841c99e7a4fcfc625ac6f829b3bf7f48
+
+PODFILE CHECKSUM: 35825f27ae5585e853e034be6629593001f0f053
+
+COCOAPODS: 1.11.3

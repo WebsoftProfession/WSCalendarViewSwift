@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A8CF274AA83C8DFF980219394C69D22 /* WSCalendarViewSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3339CB2A1098278ABA22ACE704EB675 /* WSCalendarViewSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C67F66AA0B2E7DAE3660C6CAA10D0EA /* Pods-WSCalendarViewSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB7FA5733EBADBC99D51BAF54AD7C2A4 /* Pods-WSCalendarViewSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B047E9C9D10CAD4F4AF530BF79200F4 /* WSEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289D3E26E3C5DBC9E8EDDBAFE7112CC3 /* WSEventView.swift */; };
+		7F01996FDA0ECDCA846A3BF42AC6EEF8 /* WSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E91920EE7695BF001DDEAA66FD8A8B /* WSLabel.swift */; };
+		A538BD534F53D8B5537C74546E0012D9 /* WSCalendarView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C2F671700DFC23FDFDCC0E089671F /* WSCalendarView.xib */; };
+		A95B0AA4E9B18DCCE67E537D0BDBD7F0 /* WSCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EEC132C9118AC3432F9B779E684A05 /* WSCalendarView.swift */; };
+		B7966A38E6D51491BE4AE890FD817323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BA50636477DDA6514084D241375EAB16 /* Pods-WSCalendarViewSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D909DA0BF57F4FB90487A6D171FE19F /* Pods-WSCalendarViewSwift_Tests-dummy.m */; };
+		D8EC2337814AB52371A2701839E858AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E0934C142D052B05A0AEFAD1D7B1D195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E8AB6B1C97FAEEB7D65D8C4DF7466B57 /* Pods-WSCalendarViewSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB31C5415BF7E6F7CA87F996C8540F0 /* Pods-WSCalendarViewSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC71FF9E006B658A4C9B00204EEE2EEE /* WSCalendarViewSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 494DF02F2C3DA66CC820450CECAE627D /* WSCalendarViewSwift-dummy.m */; };
+		FDA61C39E02AEB470C104778DCF38727 /* Pods-WSCalendarViewSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9011C0E27577BD6F119DD8D73695F6A /* Pods-WSCalendarViewSwift_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B84DD61242463045EB685EC76C1D055E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B499F05217595A43310AAE827B61C0;
+			remoteInfo = WSCalendarViewSwift;
+		};
+		C73B2F5587B73E9248CB7A3B8734CF54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57484A71F0E31EC2CD55AC5B3275FF16;
+			remoteInfo = "Pods-WSCalendarViewSwift_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01F4E83496AC0205402EF9DDFBE29841 /* Pods-WSCalendarViewSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSCalendarViewSwift_Example-Info.plist"; sourceTree = "<group>"; };
+		035FFDA551CC362980245D36F8E8E875 /* WSCalendarViewSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WSCalendarViewSwift.debug.xcconfig; sourceTree = "<group>"; };
+		0A1900010E1B4D6C62EF922134975306 /* WSCalendarViewSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WSCalendarViewSwift-Info.plist"; sourceTree = "<group>"; };
+		289D3E26E3C5DBC9E8EDDBAFE7112CC3 /* WSEventView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEventView.swift; path = WSCalendarViewSwift/Classes/WSEventView.swift; sourceTree = "<group>"; };
+		424E4E2C9DDA3F97354BDAB69F54C0E4 /* Pods-WSCalendarViewSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSCalendarViewSwift_Example.modulemap"; sourceTree = "<group>"; };
+		4731B7598235F5C831DBEDE9199AC0A3 /* Pods-WSCalendarViewSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSCalendarViewSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		474B1F598C70D81371F328889C963CBA /* WSCalendarViewSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WSCalendarViewSwift.release.xcconfig; sourceTree = "<group>"; };
+		494DF02F2C3DA66CC820450CECAE627D /* WSCalendarViewSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WSCalendarViewSwift-dummy.m"; sourceTree = "<group>"; };
+		4D909DA0BF57F4FB90487A6D171FE19F /* Pods-WSCalendarViewSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSCalendarViewSwift_Tests-dummy.m"; sourceTree = "<group>"; };
+		4FB5A0E398515D754AE282D6093DE880 /* Pods-WSCalendarViewSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSCalendarViewSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66AC71E4FD8F7B70779CF15490F54A00 /* Pods-WSCalendarViewSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSCalendarViewSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		70CCBD90306F8CC41938DBDE16E8065F /* Pods-WSCalendarViewSwift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WSCalendarViewSwift_Tests"; path = Pods_WSCalendarViewSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7975051C18141E9A63131AF1F056AE01 /* Pods-WSCalendarViewSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSCalendarViewSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		82939BB498EA5D9F05397A523B41FD9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		84E91920EE7695BF001DDEAA66FD8A8B /* WSLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSLabel.swift; path = WSCalendarViewSwift/Classes/WSLabel.swift; sourceTree = "<group>"; };
+		96289F7881C82C00115DB1FB1838757F /* Pods-WSCalendarViewSwift_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WSCalendarViewSwift_Example"; path = Pods_WSCalendarViewSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2C2F671700DFC23FDFDCC0E089671F /* WSCalendarView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = WSCalendarView.xib; path = WSCalendarViewSwift/Classes/WSCalendarView.xib; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4BA4FB91F5D9CAC4B4B24555CD15077 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A5ECF30FF44E440319A1503477B332C5 /* Pods-WSCalendarViewSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSCalendarViewSwift_Tests.modulemap"; sourceTree = "<group>"; };
+		AB7FA5733EBADBC99D51BAF54AD7C2A4 /* Pods-WSCalendarViewSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSCalendarViewSwift_Example-umbrella.h"; sourceTree = "<group>"; };
+		B8D806B6881EA272F0CBC19DE1216B5F /* WSCalendarViewSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WSCalendarViewSwift.modulemap; sourceTree = "<group>"; };
+		BEB31C5415BF7E6F7CA87F996C8540F0 /* Pods-WSCalendarViewSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSCalendarViewSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C3339CB2A1098278ABA22ACE704EB675 /* WSCalendarViewSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSCalendarViewSwift-umbrella.h"; sourceTree = "<group>"; };
+		C57EEF34663D4A28E05618977EE85A93 /* WSCalendarViewSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSCalendarViewSwift-prefix.pch"; sourceTree = "<group>"; };
+		CCA3745317AB94FDE04E179E1EC22F3D /* Pods-WSCalendarViewSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSCalendarViewSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D5141303C5B1E90BF86326D17C931740 /* Pods-WSCalendarViewSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSCalendarViewSwift_Tests-Info.plist"; sourceTree = "<group>"; };
+		D76F8FEF1B51A076F916D4AE9911E47F /* WSCalendarViewSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WSCalendarViewSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D7EEC132C9118AC3432F9B779E684A05 /* WSCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCalendarView.swift; path = WSCalendarViewSwift/Classes/WSCalendarView.swift; sourceTree = "<group>"; };
+		D9011C0E27577BD6F119DD8D73695F6A /* Pods-WSCalendarViewSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSCalendarViewSwift_Example-dummy.m"; sourceTree = "<group>"; };
+		EC4041619D9E9C1ABB31C6FF0213CC00 /* Pods-WSCalendarViewSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSCalendarViewSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WSCalendarViewSwift; path = WSCalendarViewSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAD7ABB92DD962291366549F57A16BE /* Pods-WSCalendarViewSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSCalendarViewSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F841078CCF432CAFC53178E435819CEB /* Pods-WSCalendarViewSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSCalendarViewSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FBE753425DA54BE0C2597A0678DDEEB5 /* Pods-WSCalendarViewSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSCalendarViewSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0124841B11407CFEBE6293C4085775E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0934C142D052B05A0AEFAD1D7B1D195 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B0080A6839DA63E5C75D43821E1909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EC2337814AB52371A2701839E858AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0AFA0741B35D434D9361870748C1240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7966A38E6D51491BE4AE890FD817323 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		538592230AAEDA8C8BAA7C40EF357E49 /* Pods-WSCalendarViewSwift_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECF30FF44E440319A1503477B332C5 /* Pods-WSCalendarViewSwift_Tests.modulemap */,
+				EFAD7ABB92DD962291366549F57A16BE /* Pods-WSCalendarViewSwift_Tests-acknowledgements.markdown */,
+				7975051C18141E9A63131AF1F056AE01 /* Pods-WSCalendarViewSwift_Tests-acknowledgements.plist */,
+				4D909DA0BF57F4FB90487A6D171FE19F /* Pods-WSCalendarViewSwift_Tests-dummy.m */,
+				D5141303C5B1E90BF86326D17C931740 /* Pods-WSCalendarViewSwift_Tests-Info.plist */,
+				BEB31C5415BF7E6F7CA87F996C8540F0 /* Pods-WSCalendarViewSwift_Tests-umbrella.h */,
+				EC4041619D9E9C1ABB31C6FF0213CC00 /* Pods-WSCalendarViewSwift_Tests.debug.xcconfig */,
+				66AC71E4FD8F7B70779CF15490F54A00 /* Pods-WSCalendarViewSwift_Tests.release.xcconfig */,
+			);
+			name = "Pods-WSCalendarViewSwift_Tests";
+			path = "Target Support Files/Pods-WSCalendarViewSwift_Tests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5C670C6925CD29167ECDA01EB3E44B52 /* Pods-WSCalendarViewSwift_Example */ = {
+			isa = PBXGroup;
+			children = (
+				424E4E2C9DDA3F97354BDAB69F54C0E4 /* Pods-WSCalendarViewSwift_Example.modulemap */,
+				4FB5A0E398515D754AE282D6093DE880 /* Pods-WSCalendarViewSwift_Example-acknowledgements.markdown */,
+				FBE753425DA54BE0C2597A0678DDEEB5 /* Pods-WSCalendarViewSwift_Example-acknowledgements.plist */,
+				D9011C0E27577BD6F119DD8D73695F6A /* Pods-WSCalendarViewSwift_Example-dummy.m */,
+				CCA3745317AB94FDE04E179E1EC22F3D /* Pods-WSCalendarViewSwift_Example-frameworks.sh */,
+				01F4E83496AC0205402EF9DDFBE29841 /* Pods-WSCalendarViewSwift_Example-Info.plist */,
+				AB7FA5733EBADBC99D51BAF54AD7C2A4 /* Pods-WSCalendarViewSwift_Example-umbrella.h */,
+				4731B7598235F5C831DBEDE9199AC0A3 /* Pods-WSCalendarViewSwift_Example.debug.xcconfig */,
+				F841078CCF432CAFC53178E435819CEB /* Pods-WSCalendarViewSwift_Example.release.xcconfig */,
+			);
+			name = "Pods-WSCalendarViewSwift_Example";
+			path = "Target Support Files/Pods-WSCalendarViewSwift_Example";
+			sourceTree = "<group>";
+		};
+		73EAEFFE952E3506A1FCDB72E86EE441 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6E4C019DB9F865110A4B8E4446B31FD /* WSCalendarViewSwift */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		88572C6FEFB8E600A16BCBBD8E858D34 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8D806B6881EA272F0CBC19DE1216B5F /* WSCalendarViewSwift.modulemap */,
+				494DF02F2C3DA66CC820450CECAE627D /* WSCalendarViewSwift-dummy.m */,
+				0A1900010E1B4D6C62EF922134975306 /* WSCalendarViewSwift-Info.plist */,
+				C57EEF34663D4A28E05618977EE85A93 /* WSCalendarViewSwift-prefix.pch */,
+				C3339CB2A1098278ABA22ACE704EB675 /* WSCalendarViewSwift-umbrella.h */,
+				035FFDA551CC362980245D36F8E8E875 /* WSCalendarViewSwift.debug.xcconfig */,
+				474B1F598C70D81371F328889C963CBA /* WSCalendarViewSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WSCalendarViewSwift";
+			sourceTree = "<group>";
+		};
+		909197902D8563CEAC04DDFFC0F86795 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96289F7881C82C00115DB1FB1838757F /* Pods-WSCalendarViewSwift_Example */,
+				70CCBD90306F8CC41938DBDE16E8065F /* Pods-WSCalendarViewSwift_Tests */,
+				EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6E4C019DB9F865110A4B8E4446B31FD /* WSCalendarViewSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D7EEC132C9118AC3432F9B779E684A05 /* WSCalendarView.swift */,
+				9A2C2F671700DFC23FDFDCC0E089671F /* WSCalendarView.xib */,
+				289D3E26E3C5DBC9E8EDDBAFE7112CC3 /* WSEventView.swift */,
+				84E91920EE7695BF001DDEAA66FD8A8B /* WSLabel.swift */,
+				D57BD4C907B94859B86B464F938A457C /* Pod */,
+				88572C6FEFB8E600A16BCBBD8E858D34 /* Support Files */,
+			);
+			name = WSCalendarViewSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				73EAEFFE952E3506A1FCDB72E86EE441 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				909197902D8563CEAC04DDFFC0F86795 /* Products */,
+				EE14F78D19376B4068B30DE54F1FFFCF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D57BD4C907B94859B86B464F938A457C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A4BA4FB91F5D9CAC4B4B24555CD15077 /* LICENSE */,
+				82939BB498EA5D9F05397A523B41FD9E /* README.md */,
+				D76F8FEF1B51A076F916D4AE9911E47F /* WSCalendarViewSwift.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EE14F78D19376B4068B30DE54F1FFFCF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C670C6925CD29167ECDA01EB3E44B52 /* Pods-WSCalendarViewSwift_Example */,
+				538592230AAEDA8C8BAA7C40EF357E49 /* Pods-WSCalendarViewSwift_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		220BB27773629BCC247DB7C353EA7B3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8CF274AA83C8DFF980219394C69D22 /* WSCalendarViewSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAC276DD526350572E92F1556DA2A30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C67F66AA0B2E7DAE3660C6CAA10D0EA /* Pods-WSCalendarViewSwift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C1FD2BA6C8F890169332844C9E7128 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AB6B1C97FAEEB7D65D8C4DF7466B57 /* Pods-WSCalendarViewSwift_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4C8B570D1E56F8E087743FFA68E10F57 /* Pods-WSCalendarViewSwift_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8030B0C9680ED163AA7C3E6D4D9CA58 /* Build configuration list for PBXNativeTarget "Pods-WSCalendarViewSwift_Tests" */;
+			buildPhases = (
+				72C1FD2BA6C8F890169332844C9E7128 /* Headers */,
+				BA0F44755FDB1673C924E39F9F64D0BF /* Sources */,
+				0124841B11407CFEBE6293C4085775E1 /* Frameworks */,
+				0830555EB079643E779383C806D9047D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				164AE62A228F14577FF6CE3D6057926D /* PBXTargetDependency */,
+			);
+			name = "Pods-WSCalendarViewSwift_Tests";
+			productName = Pods_WSCalendarViewSwift_Tests;
+			productReference = 70CCBD90306F8CC41938DBDE16E8065F /* Pods-WSCalendarViewSwift_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		57484A71F0E31EC2CD55AC5B3275FF16 /* Pods-WSCalendarViewSwift_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0876B5E3771AED011EF09A670E9DEC5D /* Build configuration list for PBXNativeTarget "Pods-WSCalendarViewSwift_Example" */;
+			buildPhases = (
+				2FAC276DD526350572E92F1556DA2A30 /* Headers */,
+				D55ABF4FABF113CC1576A3D29EEF64BF /* Sources */,
+				72B0080A6839DA63E5C75D43821E1909 /* Frameworks */,
+				C3BC23B6719F4277BDAAA75F478A73C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94AE72FFFC20C44F90236A9F9AE9A429 /* PBXTargetDependency */,
+			);
+			name = "Pods-WSCalendarViewSwift_Example";
+			productName = Pods_WSCalendarViewSwift_Example;
+			productReference = 96289F7881C82C00115DB1FB1838757F /* Pods-WSCalendarViewSwift_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		59B499F05217595A43310AAE827B61C0 /* WSCalendarViewSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2256B7AAC0B77C4BB55E38ECE0283632 /* Build configuration list for PBXNativeTarget "WSCalendarViewSwift" */;
+			buildPhases = (
+				220BB27773629BCC247DB7C353EA7B3D /* Headers */,
+				5BE118F6E23B77F5DEAB37059AED70BE /* Sources */,
+				C0AFA0741B35D434D9361870748C1240 /* Frameworks */,
+				01FD3BD90CDC3CE3ECEA3E1AB34C5F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WSCalendarViewSwift;
+			productName = WSCalendarViewSwift;
+			productReference = EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 909197902D8563CEAC04DDFFC0F86795 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57484A71F0E31EC2CD55AC5B3275FF16 /* Pods-WSCalendarViewSwift_Example */,
+				4C8B570D1E56F8E087743FFA68E10F57 /* Pods-WSCalendarViewSwift_Tests */,
+				59B499F05217595A43310AAE827B61C0 /* WSCalendarViewSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01FD3BD90CDC3CE3ECEA3E1AB34C5F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0830555EB079643E779383C806D9047D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3BC23B6719F4277BDAAA75F478A73C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BE118F6E23B77F5DEAB37059AED70BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95B0AA4E9B18DCCE67E537D0BDBD7F0 /* WSCalendarView.swift in Sources */,
+				A538BD534F53D8B5537C74546E0012D9 /* WSCalendarView.xib in Sources */,
+				FC71FF9E006B658A4C9B00204EEE2EEE /* WSCalendarViewSwift-dummy.m in Sources */,
+				6B047E9C9D10CAD4F4AF530BF79200F4 /* WSEventView.swift in Sources */,
+				7F01996FDA0ECDCA846A3BF42AC6EEF8 /* WSLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0F44755FDB1673C924E39F9F64D0BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA50636477DDA6514084D241375EAB16 /* Pods-WSCalendarViewSwift_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55ABF4FABF113CC1576A3D29EEF64BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA61C39E02AEB470C104778DCF38727 /* Pods-WSCalendarViewSwift_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		164AE62A228F14577FF6CE3D6057926D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WSCalendarViewSwift_Example";
+			target = 57484A71F0E31EC2CD55AC5B3275FF16 /* Pods-WSCalendarViewSwift_Example */;
+			targetProxy = C73B2F5587B73E9248CB7A3B8734CF54 /* PBXContainerItemProxy */;
+		};
+		94AE72FFFC20C44F90236A9F9AE9A429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WSCalendarViewSwift;
+			target = 59B499F05217595A43310AAE827B61C0 /* WSCalendarViewSwift */;
+			targetProxy = B84DD61242463045EB685EC76C1D055E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3AE73422774E80EA6996C6955543CFFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F841078CCF432CAFC53178E435819CEB /* Pods-WSCalendarViewSwift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WSCalendarViewSwift_Example/Pods-WSCalendarViewSwift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WSCalendarViewSwift_Example/Pods-WSCalendarViewSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B9A0AFE7E4F68AA74C9F7F0DE0B19E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474B1F598C70D81371F328889C963CBA /* WSCalendarViewSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WSCalendarViewSwift/WSCalendarViewSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WSCalendarViewSwift/WSCalendarViewSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WSCalendarViewSwift/WSCalendarViewSwift.modulemap";
+				PRODUCT_MODULE_NAME = WSCalendarViewSwift;
+				PRODUCT_NAME = WSCalendarViewSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C9F35766667C7D8158716FD2B6C3329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4041619D9E9C1ABB31C6FF0213CC00 /* Pods-WSCalendarViewSwift_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WSCalendarViewSwift_Tests/Pods-WSCalendarViewSwift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WSCalendarViewSwift_Tests/Pods-WSCalendarViewSwift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AB4E892E62C482B45E77F3ED3851D5E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035FFDA551CC362980245D36F8E8E875 /* WSCalendarViewSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WSCalendarViewSwift/WSCalendarViewSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WSCalendarViewSwift/WSCalendarViewSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WSCalendarViewSwift/WSCalendarViewSwift.modulemap";
+				PRODUCT_MODULE_NAME = WSCalendarViewSwift;
+				PRODUCT_NAME = WSCalendarViewSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DC77F8F02D1606D1CD3F3C43AE1967AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66AC71E4FD8F7B70779CF15490F54A00 /* Pods-WSCalendarViewSwift_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WSCalendarViewSwift_Tests/Pods-WSCalendarViewSwift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WSCalendarViewSwift_Tests/Pods-WSCalendarViewSwift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEF930FC61E06792AA84A5C3E995C62E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4731B7598235F5C831DBEDE9199AC0A3 /* Pods-WSCalendarViewSwift_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WSCalendarViewSwift_Example/Pods-WSCalendarViewSwift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WSCalendarViewSwift_Example/Pods-WSCalendarViewSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0876B5E3771AED011EF09A670E9DEC5D /* Build configuration list for PBXNativeTarget "Pods-WSCalendarViewSwift_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF930FC61E06792AA84A5C3E995C62E /* Debug */,
+				3AE73422774E80EA6996C6955543CFFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2256B7AAC0B77C4BB55E38ECE0283632 /* Build configuration list for PBXNativeTarget "WSCalendarViewSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4E892E62C482B45E77F3ED3851D5E4 /* Debug */,
+				3B9A0AFE7E4F68AA74C9F7F0DE0B19E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8030B0C9680ED163AA7C3E6D4D9CA58 /* Build configuration list for PBXNativeTarget "Pods-WSCalendarViewSwift_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9F35766667C7D8158716FD2B6C3329 /* Debug */,
+				DC77F8F02D1606D1CD3F3C43AE1967AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

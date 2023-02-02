@@ -1,0 +1,6 @@
+framework module WSCalendarViewSwift {
+  umbrella header "WSCalendarViewSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

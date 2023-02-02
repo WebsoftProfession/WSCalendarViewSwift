@@ -1,0 +1,22 @@
+{
+  "name": "WSCalendarViewSwift",
+  "version": "1.0.0",
+  "summary": "An Event Calendar for iOS in swift. Easy to customize and use.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/WebsoftProfession/WSCalendarViewSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "WebsoftProfession": "websoftprofession@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/WebsoftProfession/WSCalendarViewSwift.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "WSCalendarViewSwift/Classes/**/*"
+}

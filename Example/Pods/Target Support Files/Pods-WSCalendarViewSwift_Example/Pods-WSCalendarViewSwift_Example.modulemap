@@ -1,0 +1,6 @@
+framework module Pods_WSCalendarViewSwift_Example {
+  umbrella header "Pods-WSCalendarViewSwift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
