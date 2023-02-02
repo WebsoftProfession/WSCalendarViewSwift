@@ -1,5 +1,7 @@
 # WSCalendarViewSwift
 
+An Event Calendar for iOS in swift. Easy to customize and use
+
 [![CI Status](https://img.shields.io/travis/WebsoftProfession/WSCalendarViewSwift.svg?style=flat)](https://travis-ci.org/WebsoftProfession/WSCalendarViewSwift)
 [![Version](https://img.shields.io/cocoapods/v/WSCalendarViewSwift.svg?style=flat)](https://cocoapods.org/pods/WSCalendarViewSwift)
 [![License](https://img.shields.io/cocoapods/l/WSCalendarViewSwift.svg?style=flat)](https://cocoapods.org/pods/WSCalendarViewSwift)
