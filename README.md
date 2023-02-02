@@ -20,6 +20,9 @@ it, simply add the following line to your Podfile:
 pod 'WSCalendarViewSwift'
 ```
 
+
+## Preview
+
 ![Alt text](https://github.com/WebsoftProfession/WSCalendarViewSwift/blob/main/WSCalendar1.png?raw=true "Optional Title")
 ![Alt text](https://github.com/WebsoftProfession/WSCalendarViewSwift/blob/main/WSCalendar2.png?raw=true "Optional Title")
 
