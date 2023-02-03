@@ -31,6 +31,6 @@ let package = Package(
                 "WSCalendar1.png",
                 "WSCalendar2.png",
                 "_Pods.xcodeproj"
-            ], sources: ["WSCalendarViewSwift/Classes/**/*"])
+            ], sources: ["WSCalendarViewSwift/Classes/"])
     ]
 )
