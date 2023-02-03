@@ -24,6 +24,7 @@ let package = Package(
         .target(
             name: "WSCalendarViewSwift",
             dependencies: [],
+            sources: ["WSCalendarViewSwift/Classes/**/*"]
             path: "WSCalendarViewSwift/Classes")
     ]
 )
