@@ -1,6 +1,5 @@
 // swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 let package = Package(
@@ -24,7 +23,6 @@ let package = Package(
         .target(
             name: "WSCalendarViewSwift",
             dependencies: [],
-            sources: ["WSCalendarViewSwift/Classes/**/*"]
             path: "WSCalendarViewSwift/Classes",
             exclude: [
                     "Example/",
