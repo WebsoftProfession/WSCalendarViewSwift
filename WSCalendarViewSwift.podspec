@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'WSCalendarViewSwift'
   s.version          = '1.0.0'
   s.summary          = 'An Event Calendar for iOS in swift. Easy to customize and use.'
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/WebsoftProfession/WSCalendarViewSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'WSCalendarViewSwift/Classes/**/*'
   
@@ -36,5 +36,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
+  s.swift_versions = '5.0'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

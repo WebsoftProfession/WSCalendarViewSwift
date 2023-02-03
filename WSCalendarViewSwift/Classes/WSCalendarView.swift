@@ -655,7 +655,7 @@ public class WSCalendarView: UIView {
             action: #selector(handleTap(_:)))
         layerView.addGestureRecognizer(tapG)
         superview?.addSubview(layerView)
-        superview?.bringSubview(toFront: self)
+
     }
     
     func rempveLayerFromPopup() {

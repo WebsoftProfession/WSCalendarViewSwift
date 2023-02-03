@@ -54,12 +54,12 @@
 		70CCBD90306F8CC41938DBDE16E8065F /* Pods-WSCalendarViewSwift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WSCalendarViewSwift_Tests"; path = Pods_WSCalendarViewSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7975051C18141E9A63131AF1F056AE01 /* Pods-WSCalendarViewSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSCalendarViewSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		82939BB498EA5D9F05397A523B41FD9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		82939BB498EA5D9F05397A523B41FD9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84E91920EE7695BF001DDEAA66FD8A8B /* WSLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSLabel.swift; path = WSCalendarViewSwift/Classes/WSLabel.swift; sourceTree = "<group>"; };
 		96289F7881C82C00115DB1FB1838757F /* Pods-WSCalendarViewSwift_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WSCalendarViewSwift_Example"; path = Pods_WSCalendarViewSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2C2F671700DFC23FDFDCC0E089671F /* WSCalendarView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = WSCalendarView.xib; path = WSCalendarViewSwift/Classes/WSCalendarView.xib; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4BA4FB91F5D9CAC4B4B24555CD15077 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4BA4FB91F5D9CAC4B4B24555CD15077 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A5ECF30FF44E440319A1503477B332C5 /* Pods-WSCalendarViewSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSCalendarViewSwift_Tests.modulemap"; sourceTree = "<group>"; };
 		AB7FA5733EBADBC99D51BAF54AD7C2A4 /* Pods-WSCalendarViewSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSCalendarViewSwift_Example-umbrella.h"; sourceTree = "<group>"; };
 		B8D806B6881EA272F0CBC19DE1216B5F /* WSCalendarViewSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WSCalendarViewSwift.modulemap; sourceTree = "<group>"; };
@@ -68,11 +68,11 @@
 		C57EEF34663D4A28E05618977EE85A93 /* WSCalendarViewSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSCalendarViewSwift-prefix.pch"; sourceTree = "<group>"; };
 		CCA3745317AB94FDE04E179E1EC22F3D /* Pods-WSCalendarViewSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSCalendarViewSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D5141303C5B1E90BF86326D17C931740 /* Pods-WSCalendarViewSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSCalendarViewSwift_Tests-Info.plist"; sourceTree = "<group>"; };
-		D76F8FEF1B51A076F916D4AE9911E47F /* WSCalendarViewSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WSCalendarViewSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D76F8FEF1B51A076F916D4AE9911E47F /* WSCalendarViewSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WSCalendarViewSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D7EEC132C9118AC3432F9B779E684A05 /* WSCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCalendarView.swift; path = WSCalendarViewSwift/Classes/WSCalendarView.swift; sourceTree = "<group>"; };
 		D9011C0E27577BD6F119DD8D73695F6A /* Pods-WSCalendarViewSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSCalendarViewSwift_Example-dummy.m"; sourceTree = "<group>"; };
 		EC4041619D9E9C1ABB31C6FF0213CC00 /* Pods-WSCalendarViewSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSCalendarViewSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WSCalendarViewSwift; path = WSCalendarViewSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSCalendarViewSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAD7ABB92DD962291366549F57A16BE /* Pods-WSCalendarViewSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSCalendarViewSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F841078CCF432CAFC53178E435819CEB /* Pods-WSCalendarViewSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSCalendarViewSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FBE753425DA54BE0C2597A0678DDEEB5 /* Pods-WSCalendarViewSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSCalendarViewSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 			children = (
 				96289F7881C82C00115DB1FB1838757F /* Pods-WSCalendarViewSwift_Example */,
 				70CCBD90306F8CC41938DBDE16E8065F /* Pods-WSCalendarViewSwift_Tests */,
-				EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift */,
+				EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 			);
 			name = WSCalendarViewSwift;
 			productName = WSCalendarViewSwift;
-			productReference = EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift */;
+			productReference = EF61AED21D055EAA98013B319280A3E5 /* WSCalendarViewSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -476,7 +476,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -572,8 +572,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -603,7 +602,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
