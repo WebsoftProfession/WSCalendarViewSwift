@@ -25,6 +25,14 @@ let package = Package(
             name: "WSCalendarViewSwift",
             dependencies: [],
             sources: ["WSCalendarViewSwift/Classes/**/*"]
-            path: "WSCalendarViewSwift/Classes")
+            path: "WSCalendarViewSwift/Classes",
+            exclude: [
+                    "Example/",
+                    "LICENSE",
+                    "README.md",
+                    "WSCalendar1.png",
+                    "WSCalendar2.png",
+                    "_Pods.xcodeproj"
+                ])
     ]
 )
