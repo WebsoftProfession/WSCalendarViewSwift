@@ -24,12 +24,26 @@
                                 <rect key="frame" x="0.0" y="227" width="390" height="390"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8c-3n-77h">
+                                <rect key="frame" x="66" y="667" width="258" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GJW-aa-Z7X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="XsC-Mr-WSC"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P5I-t1-Cdw" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="HEc-8u-ajL"/>
+                            <constraint firstItem="b8c-3n-77h" firstAttribute="top" secondItem="P5I-t1-Cdw" secondAttribute="bottom" constant="50" id="Rjz-oi-PbZ"/>
+                            <constraint firstItem="b8c-3n-77h" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="VQd-eu-eTS"/>
                             <constraint firstItem="P5I-t1-Cdw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="XxH-D1-uzd"/>
                             <constraint firstItem="P5I-t1-Cdw" firstAttribute="width" secondItem="P5I-t1-Cdw" secondAttribute="height" multiplier="1:1" id="jbX-jc-UGY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b8c-3n-77h" secondAttribute="trailing" constant="50" id="kbE-Hj-k0a"/>
                             <constraint firstAttribute="trailing" secondItem="P5I-t1-Cdw" secondAttribute="trailing" id="mFe-Qd-hlg"/>
                             <constraint firstItem="P5I-t1-Cdw" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="mUk-aR-jFa"/>
                         </constraints>
@@ -40,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34" y="111"/>
+            <point key="canvasLocation" x="33.846153846153847" y="110.90047393364928"/>
         </scene>
     </scenes>
     <resources>

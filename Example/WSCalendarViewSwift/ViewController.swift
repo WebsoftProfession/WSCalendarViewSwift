@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var containerView: UIView!
     var calendarView: WSCalendarView!
+    var calendarViewPopup: WSCalendarView!
     
     var eventArray: [Date]? = []
     
@@ -28,15 +29,17 @@ class ViewController: UIViewController {
         calendarView.dayColor = UIColor.black
         calendarView.selectedDayColor = UIColor.white
         calendarView.weekDayNameColor = UIColor.lightGray
-        calendarView.barDateColor = UIColor.purple
+        calendarView.barDateColor = UIColor.red
         calendarView.todayBackgroundColor = UIColor.blue
-        calendarView.isShowOnlyMonth = false
         calendarView.tappedDayBackgroundColor = UIColor.black
         calendarView.calendarStyle = .inline
         calendarView.isShowEvent = true
+//        calendarView.navBarView.backgroundColor = .purple
+        calendarView.calendarMode = .MonthYear
+        calendarView.barDateFormat = "MMMM YYYY"
         calendarView.setBarTint(.white)
         calendarView.setupAppearance()
-        calendarView.reloadCalendar()
+//        calendarView.reloadCalendar()
         var lastDate: Date?
         var dateComponent = DateComponents()
         for _ in 0..<10 {
@@ -56,6 +59,29 @@ class ViewController: UIViewController {
         
         calendarView.reloadCalendar()
         
+        // Popup Style calendar
+        calendarViewPopup = WSCalendarView.initCalendar()
+        calendarViewPopup.delegate = self
+        calendarViewPopup.frame = CGRect.init(x: 0, y: 0, width: 300, height: 330)
+        self.view.addSubview(calendarViewPopup)
+        calendarViewPopup.dayColor = UIColor.black
+        
+        calendarViewPopup.selectedDayColor = UIColor.white
+        calendarViewPopup.weekDayNameColor = UIColor.lightGray
+        calendarViewPopup.barDateColor = UIColor.purple
+        calendarViewPopup.todayBackgroundColor = UIColor.blue
+        calendarViewPopup.tappedDayBackgroundColor = UIColor.black
+        calendarViewPopup.calendarStyle = .popup
+        calendarViewPopup.isShowEvent = false
+        calendarViewPopup.setBarTint(.white)
+        calendarViewPopup.setupAppearance()
+        calendarViewPopup.reloadCalendar()
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,3 +106,10 @@ extension ViewController: WSCalendarViewDelegate {
     
 }
 
+extension ViewController: UITextFieldDelegate {
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        calendarViewPopup.activeCalendar(textField)
+        return true
+    }
+}

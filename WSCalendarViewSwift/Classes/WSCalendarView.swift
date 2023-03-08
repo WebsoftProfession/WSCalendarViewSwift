@@ -8,7 +8,7 @@
 import UIKit
 
 public enum WSCalendarStyle : Int {
-    case dialog = 0
+    case popup = 0
     case inline = 1
 }
 
@@ -20,6 +20,12 @@ public enum WSWeekDays: String {
     case FRI = "Fri"
     case SAT = "Sat"
     case SUN = "Sun"
+}
+
+public enum CalendarMode: Int {
+    case Month = 0
+    case Year
+    case MonthYear
 }
 
 
@@ -81,7 +87,7 @@ public class WSCalendarView: UIView {
     @IBOutlet weak var lblDate36: WSLabel!
     @IBOutlet weak var lblDate37: WSLabel!
     @IBOutlet weak var lblDate38: WSLabel!
-    @IBOutlet weak var barView: UIView!
+    @IBOutlet weak public var navBarView: UIView!
     
     @IBOutlet weak var btnCancel: UIButton!
     @IBOutlet weak var btnOK: UIButton!
@@ -102,7 +108,7 @@ public class WSCalendarView: UIView {
     
     
     // Calendar Properties
-    public var calendarStyle = WSCalendarStyle.dialog
+    public var calendarStyle = WSCalendarStyle.inline
     public var isShowEvent = false
     public var dayColor: UIColor?
     public var selectedDayColor: UIColor?
@@ -111,7 +117,9 @@ public class WSCalendarView: UIView {
     public var todayBackgroundColor: UIColor?
     public var tappedDayBackgroundColor: UIColor?
     public var eventColor: UIColor?
-    public var isShowOnlyMonth: Bool = false
+    var isShowOnlyMonth: Bool = false
+    public var barDateFormat: String = "dd MMMM yyyy"
+    public var calendarMode: CalendarMode = .MonthYear
     
     
     public class func initCalendar() -> WSCalendarView {
@@ -119,31 +127,30 @@ public class WSCalendarView: UIView {
         return (bundle.loadNibNamed("WSCalendarView", owner: self, options: nil)?.first as? WSCalendarView)!
     }
     
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+
+    }
+    
     
     func initializeMonthYear() {
+    
         dateLabelArray = [lblDate1, lblDate2, lblDate3, lblDate4, lblDate5, lblDate6, lblDate7, lblDate8, lblDate9, lblDate10, lblDate11, lblDate12, lblDate13, lblDate14, lblDate15, lblDate16, lblDate17, lblDate18, lblDate19, lblDate20, lblDate21, lblDate22, lblDate23, lblDate24, lblDate25, lblDate26, lblDate27, lblDate28, lblDate29, lblDate30, lblDate31, lblDate32, lblDate33, lblDate34, lblDate35, lblDate36, lblDate37, lblDate38]
         
         let currentDate = Date()
-        self.setLabelCircle(currentDate)
+        
         self.setDayColor(self.dayColor)
         self.setWeekDayColor(self.weekDayNameColor)
+        self.setLabelCircle(currentDate)
         
-        if isShowOnlyMonth {
-            btnMonthNext.isHidden = true
-            btnMonthPrev.isHidden = true
-        }
-        else{
-            btnMonthNext.isHidden = false
-            btnMonthPrev.isHidden = false
-        }
-        
+        setupCalendarMode()
         
         for i in 0..<38 {
             
             let lbl = dateLabelArray[i]
             
             lbl.tag = i
-            
+            lbl.layer.cornerRadius = lbl.frame.size.width
             let tapG = UITapGestureRecognizer(target: self, action: #selector(lblTapped(_:)))
             lbl.addGestureRecognizer(tapG)
             
@@ -155,6 +162,33 @@ public class WSCalendarView: UIView {
             self.setMonthLabels(currentDate)
             
             
+        }
+        
+        self.layoutIfNeeded()
+    }
+    
+    func setupCalendarMode(){
+        isShowOnlyMonth = false
+        switch  self.calendarMode {
+            case .Month: do {
+                isShowOnlyMonth = true
+                btnYearNext.isHidden = false
+                btnYearPrev.isHidden = false
+                btnMonthNext.isHidden = true
+                btnMonthPrev.isHidden = true
+            }
+            case .Year: do {
+                btnYearNext.isHidden = false
+                btnYearPrev.isHidden = false
+                btnMonthNext.isHidden = true
+                btnMonthPrev.isHidden = true
+            }
+            case .MonthYear: do {
+                btnYearNext.isHidden = false
+                btnYearPrev.isHidden = false
+                btnMonthNext.isHidden = false
+                btnMonthPrev.isHidden = false
+            }
         }
     }
     
@@ -421,9 +455,10 @@ public class WSCalendarView: UIView {
     
     func setDateLabel(_ date: Date) {
         let monthFormatter = DateFormatter()
-        monthFormatter.dateFormat = "MMMM YYYY"
+//        monthFormatter.dateFormat = "MMMM YYYY"
+        monthFormatter.dateFormat = self.barDateFormat
         if compareCurrentMonthYear(toDate: date) {
-            monthFormatter.dateFormat = "dd MMMM YYYY"
+            monthFormatter.dateFormat = self.barDateFormat
             lblBarDate.text = monthFormatter.string(from: selectedDate)
         }
         else{
@@ -433,7 +468,7 @@ public class WSCalendarView: UIView {
     
     func setYear(_ date: Date?) {
         let monthFormatter = DateFormatter()
-        monthFormatter.dateFormat = "dd MMMM YYYY"
+        monthFormatter.dateFormat = self.barDateFormat
         if let date = date {
             lblBarDate.text = monthFormatter.string(from: date)
         }
@@ -509,21 +544,14 @@ public class WSCalendarView: UIView {
     }
     
     public func reloadCalendar() {
-        if isShowOnlyMonth {
-            btnMonthNext.isHidden = true
-            btnMonthPrev.isHidden = true
-        }
-        else{
-            btnMonthNext.isHidden = false
-            btnMonthPrev.isHidden = false
-        }
+        setupCalendarMode()
         self.setMonthLabels(selectedDate)
     }
     
     public var delegate: WSCalendarViewDelegate?
     
     public func setupAppearance() {
-        if calendarStyle == .dialog {
+        if calendarStyle == .popup {
             isHidden = true
             clipsToBounds = true
             layer.cornerRadius = 5.0
@@ -537,7 +565,7 @@ public class WSCalendarView: UIView {
         initializeMonthYear()
     }
     
-    func activeCalendar(_ view: UIView?) {
+    public func activeCalendar(_ view: UIView?) {
         if (view is UITextField) || (view is UITextView) {
             activeTextField = view as? UITextField
         }
@@ -571,7 +599,7 @@ public class WSCalendarView: UIView {
     }
     
     
-    func setBarDateColor(_ barDateColor: UIColor?) {
+    public func setBarDateColor(_ barDateColor: UIColor?) {
         self.barDateColor = barDateColor
         lblBarDate.textColor = barDateColor
     }
@@ -586,7 +614,7 @@ public class WSCalendarView: UIView {
     }
     
     public func setBarTint(_ tint: UIColor?){
-        self.barView.subviews.forEach { view in
+        self.navBarView.subviews.forEach { view in
             view.tintColor = tint ?? .white
             if let label = view as? UILabel {
                 label.textColor = tint ?? .white
@@ -623,11 +651,11 @@ public class WSCalendarView: UIView {
         isHidden = true
         alpha = 0.1
         let mainScreenFrame = UIScreen.main.bounds
-        frame = CGRect(x: 20, y: mainScreenFrame.size.width / 2, width: mainScreenFrame.size.width - 40, height: 300)
+        frame = CGRect(x: 20, y: mainScreenFrame.size.width / 2, width: mainScreenFrame.size.width - 40, height: self.frame.size.height)
         isHidden = false
         
         UIView.animate(withDuration: 0.3, animations: { [self] in
-            frame = CGRect(x: 20, y: mainScreenFrame.size.width / 2, width: mainScreenFrame.size.width - 40, height: 300)
+            frame = CGRect(x: 20, y: mainScreenFrame.size.width / 2, width: mainScreenFrame.size.width - 40, height: self.frame.size.height)
             alpha = 1.0
         }) { finished in
             UIView.animate(withDuration: 0.1, animations: {
@@ -646,20 +674,23 @@ public class WSCalendarView: UIView {
     }
     
     func addLayerToPopup() {
+//        let screenSize: CGRect = UIScreen.main.bounds
         let layerView = UIView(frame: superview?.frame ?? .zero)
         layerView.tag = 2000
         layerView.backgroundColor = .black
         layerView.alpha = 0.5
+        layerView.center = window?.center ?? .zero
         let tapG = UITapGestureRecognizer(
             target: self,
             action: #selector(handleTap(_:)))
         layerView.addGestureRecognizer(tapG)
         superview?.addSubview(layerView)
-
+        superview?.bringSubviewToFront(self)
+        
     }
     
     func rempveLayerFromPopup() {
-        var layerView = superview?.viewWithTag(2000)
+        var layerView = window?.viewWithTag(2000)
         layerView?.removeFromSuperview()
         layerView = nil
     }
@@ -690,12 +721,6 @@ public class WSCalendarView: UIView {
             return 1
         }
     }
-    
-    
-    
-    
-    
-    
 }
 
 
