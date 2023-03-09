@@ -124,13 +124,16 @@ public class WSCalendarView: UIView {
     
     public class func initCalendar() -> WSCalendarView {
         let bundle = Bundle(for: WSCalendarView.self)
-        return (bundle.loadNibNamed("WSCalendarView", owner: self, options: nil)?.first as? WSCalendarView)!
+        let view = (bundle.loadNibNamed("WSCalendarView", owner: self, options: nil)?.first as? WSCalendarView)!
+        return view
     }
     
     public override func awakeFromNib() {
         super.awakeFromNib()
-
+        
     }
+    
+    
     
     
     func initializeMonthYear() {
@@ -143,14 +146,14 @@ public class WSCalendarView: UIView {
         self.setWeekDayColor(self.weekDayNameColor)
         self.setLabelCircle(currentDate)
         
-        setupCalendarMode()
+        
         
         for i in 0..<38 {
             
             let lbl = dateLabelArray[i]
             
             lbl.tag = i
-            lbl.layer.cornerRadius = lbl.frame.size.width
+            lbl.layer.cornerRadius = lbl.frame.size.width / 2
             let tapG = UITapGestureRecognizer(target: self, action: #selector(lblTapped(_:)))
             lbl.addGestureRecognizer(tapG)
             
@@ -163,8 +166,10 @@ public class WSCalendarView: UIView {
             
             
         }
-        
-        self.layoutIfNeeded()
+        setupCalendarMode()
+//        DispatchQueue.main.async {
+            self.layoutIfNeeded()
+//        }
     }
     
     func setupCalendarMode(){
@@ -204,11 +209,11 @@ public class WSCalendarView: UIView {
             lbl.textColor = dayColor ?? .black
             var isSelectedDate = false
             var isTodayMonth = false
-            if dateString(matching: lbl.linkedDate ?? Date(), toDate: selectedDate) {
+            if dateString(matching: lbl.linkedDate ?? Date(), toDate: selectedDate) && !lbl.isHidden {
                 isSelectedDate = true
             }
             
-            if dateString(matching: lbl.linkedDate ?? Date()) {
+            if dateString(matching: lbl.linkedDate ?? Date()) && !lbl.isHidden {
                 isTodayMonth = true
             }
             
@@ -444,6 +449,7 @@ public class WSCalendarView: UIView {
                 print("done")
                 lbl.isHidden = true
                 removeLabelCircle(date)
+                self.setDateLabel(date)
                 return
             }
             lbl.text = currentDateValue
@@ -451,12 +457,21 @@ public class WSCalendarView: UIView {
                 removeLabelCircle(date)
             }
         }
+        
+        self.setDateLabel(date)
     }
     
     func setDateLabel(_ date: Date) {
+        
         let monthFormatter = DateFormatter()
 //        monthFormatter.dateFormat = "MMMM YYYY"
-        monthFormatter.dateFormat = self.barDateFormat
+        if compare(date, with: selectedDate) {
+            monthFormatter.dateFormat = self.barDateFormat
+        }
+        else{
+            monthFormatter.dateFormat = "MMMM YYYY"
+        }
+        
         if compareCurrentMonthYear(toDate: date) {
             monthFormatter.dateFormat = self.barDateFormat
             lblBarDate.text = monthFormatter.string(from: selectedDate)
@@ -543,9 +558,14 @@ public class WSCalendarView: UIView {
         self.setMonthLabels(datein)
     }
     
-    public func reloadCalendar() {
+    public func reloadCalendar(withDate: Date? = nil) {
+        if withDate != nil {
+            previousDate = withDate
+            selectedDate = withDate
+        }
         setupCalendarMode()
         self.setMonthLabels(selectedDate)
+        
     }
     
     public var delegate: WSCalendarViewDelegate?
@@ -569,9 +589,10 @@ public class WSCalendarView: UIView {
         if (view is UITextField) || (view is UITextView) {
             activeTextField = view as? UITextField
         }
-        reloadCalendar()
-        addLayerToPopup()
+        previousDate = selectedDate
         showCalendar(in: view)
+        addLayerToPopup()
+        
     }
     
     func deActiveCalendar() {
@@ -624,7 +645,7 @@ public class WSCalendarView: UIView {
     
     
     @IBAction func cancelAction(_ sender: Any) {
-        activeTextField?.text = ""
+//        activeTextField?.text = ""
         endEditing(true)
         superview?.endEditing(true)
         deActiveCalendar()
@@ -651,15 +672,23 @@ public class WSCalendarView: UIView {
         isHidden = true
         alpha = 0.1
         let mainScreenFrame = UIScreen.main.bounds
-        frame = CGRect(x: 20, y: mainScreenFrame.size.width / 2, width: mainScreenFrame.size.width - 40, height: self.frame.size.height)
+
+        let itemSize = (mainScreenFrame.size.width - 60.0) / 7.0
+        let viewHeight = 150 + itemSize * 6
+        
+        frame = CGRect(x: 20, y: mainScreenFrame.size.height/2 - viewHeight / 2 , width: mainScreenFrame.size.width - 40, height: viewHeight - 40)
+        self.layoutIfNeeded()
+        self.reloadCalendar()
         isHidden = false
         
-        UIView.animate(withDuration: 0.3, animations: { [self] in
-            frame = CGRect(x: 20, y: mainScreenFrame.size.width / 2, width: mainScreenFrame.size.width - 40, height: self.frame.size.height)
+        UIView.animate(withDuration: 0.2, animations: { [self] in
+            frame = CGRect(x: 20, y: mainScreenFrame.size.height/2 - viewHeight / 2 , width: mainScreenFrame.size.width - 40, height: viewHeight - 40)
+            
             alpha = 1.0
         }) { finished in
             UIView.animate(withDuration: 0.1, animations: {
             }) { finished in
+//                self.removeLabelCircle(self.previousDate)
                 
             }
         }

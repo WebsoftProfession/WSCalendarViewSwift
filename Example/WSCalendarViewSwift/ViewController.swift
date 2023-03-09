@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        
         calendarView = WSCalendarView.initCalendar()
         calendarView.delegate = self
         calendarView.frame = containerView.bounds
@@ -62,8 +64,8 @@ class ViewController: UIViewController {
         // Popup Style calendar
         calendarViewPopup = WSCalendarView.initCalendar()
         calendarViewPopup.delegate = self
-        calendarViewPopup.frame = CGRect.init(x: 0, y: 0, width: 300, height: 330)
         self.view.addSubview(calendarViewPopup)
+        
         calendarViewPopup.dayColor = UIColor.black
         
         calendarViewPopup.selectedDayColor = UIColor.white
