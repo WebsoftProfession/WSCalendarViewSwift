@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WSCalendarViewSwift'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'An Event Calendar for iOS in swift. Easy to customize and use.'
   s.swift_version = '5.0'
 # This description is used to generate tags and improve search results.
