@@ -120,6 +120,9 @@ public class WSCalendarView: UIView {
     var isShowOnlyMonth: Bool = false
     public var barDateFormat: String = "dd MMMM yyyy"
     public var calendarMode: CalendarMode = .MonthYear
+    public var maximumDate: Date?
+    public var minimumDate: Date?
+    public var inActiveDayColor: UIColor = .lightGray
     
     
     public class func initCalendar() -> WSCalendarView {
@@ -151,7 +154,6 @@ public class WSCalendarView: UIView {
         for i in 0..<38 {
             
             let lbl = dateLabelArray[i]
-            
             lbl.tag = i
             lbl.layer.cornerRadius = lbl.frame.size.width / 2
             let tapG = UITapGestureRecognizer(target: self, action: #selector(lblTapped(_:)))
@@ -163,13 +165,9 @@ public class WSCalendarView: UIView {
             self.setYear(selectedDate)
             numberOfYearsInCalendar()
             self.setMonthLabels(currentDate)
-            
-            
         }
         setupCalendarMode()
-//        DispatchQueue.main.async {
-            self.layoutIfNeeded()
-//        }
+        self.layoutIfNeeded()
     }
     
     func setupCalendarMode(){
@@ -202,11 +200,17 @@ public class WSCalendarView: UIView {
         let monthFormatter = DateFormatter()
         monthFormatter.dateFormat = "dd"
         for i in 0..<38 {
-            
             let lbl = dateLabelArray[i]
             lbl.layer.cornerRadius = (lbl.frame.size.width) / 2
             lbl.layer.borderWidth = 2.0
-            lbl.textColor = dayColor ?? .black
+            
+            if IsReadOnlyDate(date: lbl.linkedDate ?? Date()) {
+                lbl.textColor = inActiveDayColor
+            }
+            else {
+                lbl.textColor = dayColor ?? .black
+            }
+            
             var isSelectedDate = false
             var isTodayMonth = false
             if dateString(matching: lbl.linkedDate ?? Date(), toDate: selectedDate) && !lbl.isHidden {
@@ -336,12 +340,45 @@ public class WSCalendarView: UIView {
         return false
     }
     
+    func IsReadOnlyDate(date: Date) -> Bool {
+        
+        var isReadOnly = false
+        if let maxDate = maximumDate {
+            let order = Calendar.current.compare(date, to: maxDate, toGranularity: .day)
+            switch order {
+            case .orderedDescending:
+                isReadOnly = true
+            case .orderedAscending:
+                break;
+            case .orderedSame:
+                break;
+            }
+        }
+        
+        if let minDate = minimumDate {
+            let order = Calendar.current.compare(date, to: minDate, toGranularity: .day)
+            switch order {
+            case .orderedDescending:
+                break;
+            case .orderedAscending:
+                isReadOnly = true
+            case .orderedSame:
+                break;
+            }
+        }
+        
+        return isReadOnly
+    }
+    
     @objc func lblTapped(_ tap: UITapGestureRecognizer) {
         
         let lbl = tap.view as? WSLabel
         
-        selectedDate = lbl?.linkedDate
+        if IsReadOnlyDate(date: lbl?.linkedDate ?? Date()) {
+            return
+        }
         
+        selectedDate = lbl?.linkedDate
         let monthFormatter = DateFormatter()
         monthFormatter.dateFormat = "dd MMMM YYYY"
         lblBarDate.text = monthFormatter.string(from: selectedDate)
@@ -412,7 +449,6 @@ public class WSCalendarView: UIView {
         let startFrom = self.getWeekDayCount(weekDay: weekDay)
         
         for _ in 0..<30 {
-            
             var dc = DateComponents()
             dc.day = 1
             let datein = Calendar.current.date(byAdding: dc, to: currentDate)
@@ -430,6 +466,7 @@ public class WSCalendarView: UIView {
             let lbl = dateLabelArray[i + startFrom]
             
             lbl.linkedDate = daysInMonth[i]
+            
             lbl.isHidden = false
             var currentDateValue: String? = nil
             
@@ -442,11 +479,11 @@ public class WSCalendarView: UIView {
             currentDateString = endDateFormatter.string(from: daysInMonth[i])
             
             if endDateFormatter.string(from: daysInMonth[i]) == endDateFormatter.string(from: Date()) {
-                print("This date belongs to current date")
+//                print("This date belongs to current date")
             }
             
             if currentDateString == endDateString {
-                print("done")
+//                print("done")
                 lbl.isHidden = true
                 removeLabelCircle(date)
                 self.setDateLabel(date)

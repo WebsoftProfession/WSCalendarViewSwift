@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         calendarView.calendarMode = .MonthYear
         calendarView.barDateFormat = "MMMM YYYY"
         calendarView.setBarTint(.white)
+        
         calendarView.setupAppearance()
 //        calendarView.reloadCalendar()
         var lastDate: Date?
@@ -76,6 +77,12 @@ class ViewController: UIViewController {
         calendarViewPopup.calendarStyle = .popup
         calendarViewPopup.isShowEvent = false
         calendarViewPopup.setBarTint(.white)
+        
+        // Configure date boundations properties
+//        calendarViewPopup.maximumDate = Date()
+//        calendarViewPopup.minimumDate = Date()
+//        calendarViewPopup.inActiveDayColor = .red
+        
         calendarViewPopup.setupAppearance()
         calendarViewPopup.reloadCalendar()
         
